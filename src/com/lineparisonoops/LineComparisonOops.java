@@ -51,12 +51,26 @@ public class LineComparisonOops {
 		}
 
 		if (length == length1) {
-			System.out.println("Length is equal to Length1");
+			System.out.println("Length is equal to length1 ");
 		} else if (length > length1) {
-			System.out.println("Length is greater than Length1");
+			System.out.println("Length is greater than length1 ");
 		} else {
-			System.out.println("Length is less than Length1");
+			System.out.println("Length is less than length1 ");
 		}
+		
+		
+		Double line1 = Double.valueOf(length);
+		Double line2 = Double.valueOf(length1);
+		int val = line1.compareTo(line2);
+		if (val == 0) {
+			System.out.println("Two line are eqaul");
+		} else if (val > 0) {
+			System.out.println("Line 1 is greater than line2");
+		} else
+			System.out.println("Line 1 is less than line2");
+
+		
+		
 
 	}
 
