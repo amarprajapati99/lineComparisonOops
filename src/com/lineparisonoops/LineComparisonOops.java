@@ -19,12 +19,11 @@ public class LineComparisonOops {
 		System.out.println("Enter y2 point :");
 		y2 = sc.nextInt();
 		length = Math.sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
-		System.out.println("length of Line is: " + "(" + x1 + "," + y1 + ")," 
-		                        + "(" + x2 + "," + y2 + ")" + " " + length);
-		
-		int p1,p2,q2,q1;
+		System.out.println("length of Line is: " + "(" + x1 + "," + y1 + ")," + "(" + x2 + "," + y2 + ")" + " " + length);
+
+		int p1, p2, q2, q1;
 		double length1;
-		
+
 		System.out.println("Enter x1 point");
 		x1 = sc.nextInt();
 		System.out.println("Enter y1 point");
@@ -43,14 +42,21 @@ public class LineComparisonOops {
 		q2 = sc.nextInt();
 		length = Math.sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
 		length1 = Math.sqrt((p2 - p1) ^ 2 + (q2 - q1) ^ 2);
-		//System.out.println("Length of Line is: " + "(" + x1 + "," + y1 + ")," + "(" + x2 + "," + y2 + ")" 	+ Length);
-		if(length == length1) {
+		// System.out.println("Length of Line is: " + "(" + x1 + "," + y1 + ")," + "(" +
+		// x2 + "," + y2 + ")" + Length);
+		if (length == length1) {
 			System.out.println("Length is equal to length1");
-		}
-		else {
+		} else {
 			System.out.println("Length is not equal to length1");
 		}
-		
+
+		if (length == length1) {
+			System.out.println("Length is equal to Length1");
+		} else if (length > length1) {
+			System.out.println("Length is greater than Length1");
+		} else {
+			System.out.println("Length is less than Length1");
+		}
 
 	}
 
